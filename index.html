@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>류지용 & 홍성희 결혼합니다</title>
+    <meta property="og:title" content="류지용 & 홍성희 결혼식에 초대합니다">
+    <meta property="og:description" content="2026년 5월 30일 토요일 낮 12시 20분, 팔레드 오페라 3층 트리아농홀">
+    <meta property="og:image" content="images/0.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        :root {
+            --bg-color: #FAF9F6;
+            --container-bg: #FFFFFF;
+            --text-main: #2C2C2C;
+            --text-sub: #555555;
+            --accent-color: #E07A5F; /* 청첩장 포인트 컬러와 비슷한 따뜻한 색감 */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            word-break: keep-all;
+        }
+        
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            padding-bottom: 50px;
+        }
+
+        /* 섹션 공통 */
+        section { padding: 3.5rem 1.5rem; text-align: center; }
+        h2 {
+            font-family: 'Noto Serif KR', serif;
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+        }
+        h2.eng-title {
+            font-family: cursive; /* 캘리그라피 느낌 */
+            color: var(--accent-color);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        p { font-size: 0.95rem; color: var(--text-sub); margin-bottom: 0.8rem; }
+        .divider { width: 100%; height: 1px; background: #eee; border: none; }
+
+        /* 1. 메인 상단 */
+        .main-hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .main-info {
+            padding: 2.5rem 1rem;
+        }
+        .main-info h1 {
+            font-family: 'Noto Serif KR', serif;
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
+        }
+        .main-info .date-loc {
+            font-size: 1rem;
+            color: var(--text-sub);
+        }
+
+        /* 2. 초대 문구 & 혼주 */
+        .invitation-text p { margin-bottom: 1.2rem; }
+        .parents-box {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: #fcfcfc;
+            border-radius: 8px;
+        }
+        .parent-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        .parent-row span { margin: 0 4px; }
+        .parent-row b { font-weight: 600; color: var(--text-main); }
+        .relation { color: #888; font-size: 0.85rem; margin-left: 8px; margin-right: 8px; }
+
+        /* 3. 갤러리 (Swiper) */
+        .swiper {
+            width: 100%;
+            height: auto;
+            padding-bottom: 30px;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .swiper-pagination-bullet-active {
+            background: var(--accent-color);
+        }
+
+        /* 4. 오시는 길 & 교통편 */
+        .location-info {
+            text-align: left;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+            padding-top: 1.5rem;
+        }
+        .transport-row {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+        .transport-label {
+            width: 60px;
+            color: var(--accent-color);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .transport-desc {
+            flex: 1;
+            color: #555;
+        }
+        .map-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+        .btn {
+            flex: 1;
+            padding: 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .btn-kakao { background-color: #FEE500; color: #191919; }
+        .btn-naver { background-color: #03C75A; color: white; }
+
+        /* 푸터 */
+        footer {
+            background: #f9f9f9;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-hero">
+            <img src="images/0.jpg" alt="메인사진">
+            <div class="main-info">
+                <p style="color:var(--accent-color); font-size:0.9rem; letter-spacing:2px; margin-bottom:10px;">WEDDING DAY</p>
+                <h1>류지용 <span style="font-size:0.8em; color:#ddd;">|</span> 홍성희</h1>
+                <div class="date-loc">
+                    2026년 5월 30일 토요일 낮 12시 20분<br>
+                    대전 팔레드 오페라 3층 트리아농홀
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <section class="invitation">
+            <h2 class="eng-title">Invitation</h2>
+            <h2>소중한 분들을 초대합니다</h2>
+            <div class="invitation-text">
+                <p>
+                    사랑과 신뢰로 한 걸음 한 걸음<br>
+                    서로의 인생에 다가선 두 사람이<br>
+                    이제 하나가 되어<br>
+                    새로운 시작을 하려 합니다.
+                </p>
+                <p>
+                    귀한 걸음으로 오셔서<br>
+                    축복해 주시고 함께해 주세요.
+                </p>
+            </div>
+
+            <div class="parents-box">
+                <div class="parent-row">
+                    <span>류인엽 · 정영화</span>
+                    <span class="relation">의 장남</span>
+                    <b>지용</b>
+                </div>
+                <div class="parent-row">
+                    <span>홍석만 · 주미숙</span>
+                    <span class="relation">의 장녀</span>
+                    <b>성희</b>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="gallery">
+            <h2 class="eng-title">Gallery</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next" style="color:#fff; opacity:0.7; transform:scale(0.5);"></div>
+                <div class="swiper-button-prev" style="color:#fff; opacity:0.7; transform:scale(0.5);"></div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="location">
+            <h2 class="eng-title">Location</h2>
+            <h2>오시는 길</h2>
+            <p style="font-weight:700; font-size:1.1rem; color:#333;">대전 팔레드 오페라 3층 트리아농홀</p>
+            <p>대전광역시 서구 둔산남로 50</p>
+
+            <div class="map-buttons">
+                <a href="https://map.kakao.com/link/search/대전 팔레드오페라" class="btn btn-kakao" target="_blank">카카오맵</a>
+                <a href="https://map.naver.com/v5/search/대전 팔레드오페라" class="btn btn-naver" target="_blank">네이버지도</a>
+            </div>
+
+            <div class="location-info">
+                <div class="transport-row">
+                    <div class="transport-label">지하철</div>
+                    <div class="transport-desc">1호선 탄방역 2번, 3번 출구</div>
+                </div>
+                <div class="transport-row">
+                    <div class="transport-label">버 스</div>
+                    <div class="transport-desc">
+                        복합고속터미널 승차 시 : 간선 105, 106<br>
+                        정부청사터미널 승차 시 : 간선 618<br>
+                        세종특별자치시 승차 시 : 광역 M1
+                    </div>
+                </div>
+                <div class="transport-row">
+                    <div class="transport-label">자가용</div>
+                    <div class="transport-desc">
+                        유성IC 또는 북대전IC 또는 대전IC<br>
+                        → 시청방면 → 대전시청 남문 앞<br>
+                        * 3층 트리아농홀은 주차타워 4층과 연결
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Copyright 2026. Jiyong & Seonghee. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // 1. 갤러리 이미지 동적 생성 (1.jpg ~ 15.jpg)
+        const swiperWrapper = document.querySelector('.swiper-wrapper');
+        for (let i = 1; i <= 15; i++) {
+            const slideDiv = document.createElement('div');
+            slideDiv.className = 'swiper-slide';
+            // 이미지 태그 생성
+            const img = document.createElement('img');
+            img.src = `images/${i}.jpg`; 
+            img.loading = 'lazy'; // 로딩 최적화
+            
+            slideDiv.appendChild(img);
+            swiperWrapper.appendChild(slideDiv);
+        }
+
+        // 2. Swiper 초기화
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true, // 무한 반복
+        });
+    </script>
+</body>
+</html>
