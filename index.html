@@ -185,6 +185,31 @@
             background: var(--accent-color);
         }
 
+        /* 스와이퍼 화살표 스타일 수정 - 음영 추가 */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #fff; /* 화살표 색상 */
+            opacity: 1 !important; /* 항상 보이도록 opacity 강제 적용 */
+            width: 40px; /* 버튼 크기 */
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.5); /* 반투명 검은색 배경 */
+            border-radius: 50%; /* 원형 버튼 */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 그림자 효과 추가 */
+            transition: background-color 0.3s ease; /* 호버 효과를 위한 트랜지션 */
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background-color: rgba(0, 0, 0, 0.7); /* 호버 시 배경색 변경 */
+        }
+
+        /* 화살표 아이콘 크기 조정 */
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 1.2rem; /* 아이콘 크기 줄이기 */
+            font-weight: bold; /* 아이콘 두께 키우기 */
+        }
+
         /* 4. 캘린더 */
         .calendar-box {
             margin-top: 1rem;
@@ -482,8 +507,8 @@
                 <div class="swiper-wrapper">
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-next" style="color:#fff; opacity:0.7; transform:scale(0.5);"></div>
-                <div class="swiper-button-prev" style="color:#fff; opacity:0.7; transform:scale(0.5);"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
 
